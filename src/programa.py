@@ -81,7 +81,7 @@ while True:
     if opcion == "1":
         (x_data, y_data) = tomar_puntos()
     elif opcion == "2":
-        #Función para muestra de diagrama
+        mostrar_diagrama(x_data, y_data)
     elif opcion == "3": #Cierra programa
         sys.exit(0)
     else:
