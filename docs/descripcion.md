@@ -12,5 +12,7 @@ Se dispone de las siguientes opciones en el menú que se pueden seleccionar meni
 Esta opción permite abrir una interación con el usuario para tomar las coordenas de los puntos en "x" e "y". Estos valores
 son almacenados por el programa para poder pasarlos a la función de generación de la gráfica.
 ### Mostrar diagrama de puntos
+Esta opción permite mostrar una gráfica de nube de puntos. La función emplea los puntos anteriormente introducidos por el
+usuario en la opción "Añadir puntos".
 ### Salir del programa
 Esta opción nos permite cerrar la ejecución del programa una vez allamos terminado de trabajar.
