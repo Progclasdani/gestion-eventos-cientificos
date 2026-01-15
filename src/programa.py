@@ -26,7 +26,42 @@ def menu_programa():
     return
 
 def tomar_puntos():
-    return
+    """
+    Función para tomar los datos de las
+    coordenas de los puntos.
+    """
+    #Declaración de Variables
+    x_aux = []
+    y_aux = []
+    #Bucle toma de datos
+    while True:
+        #Toma de datos
+        print("Introduce punto")
+        #Comprobamos datos introducidos
+        while True: #Valor de x
+            x_in = input("Valor en x: ")
+            try:
+                x_in = float(x_in)
+                break
+            except ValueError:
+                print("No es un número válido.")
+        while True: #Valor de y
+            y_in = input("Valor en y: ")
+            try:
+                y_in = float(y_in)
+                break
+            except ValueError:
+                print("No es un número válido.")
+        #Montamos el punto
+        x_aux.append(x_in)
+        y_aux.append(y_in)
+        #Colsulta si desea finalizar la entrada de puntos
+        finalizar = input("Desea introducir otro punto(s/n): ")
+        if (finalizar == "n" or finalizar == "N" or
+            finalizar == "no" or finalizar == "No" or
+            finalizar == "NO"):
+            break
+    return x_aux, y_aux
 
 #Programa principal
 while True:
@@ -35,7 +70,7 @@ while True:
     #Acción de menú
     opcion = input("Elige una opción: ")
     if opcion == "1":
-        #Función para añadir puntos.
+        (x_data, y_data) = tomar_puntos()
     elif opcion == "2":
         #Función para muestra de diagrama
     elif opcion == "3": #Cierra programa
