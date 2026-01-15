@@ -7,6 +7,11 @@ su representación en una gráfica.
 *********************************************
 """
 #Importado de módulos
+import matplotlib.pyplot as plt
+
+#Decalaración de variables globales
+x_data = []
+y_data = []
 
 #Declaración de funciones
 def menu_programa():
@@ -18,6 +23,9 @@ def menu_programa():
     print("1- Añadir puntos.")
     print("2- Muestra diagrama de puntos.")
     print("3- Cerrar programa.")
+    return
+
+def tomar_puntos():
     return
 
 #Programa principal
