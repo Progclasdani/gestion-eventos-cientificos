@@ -63,6 +63,15 @@ def tomar_puntos():
             break
     return x_aux, y_aux
 
+def mostrar_diagrama(x_aux, y_aux):
+    """
+    Función para mostrar los valores de los puntos
+    introducidos en una gráfica de nube de puntos.
+    """
+    plt.scatter(x_aux, y_aux)
+    plt.show()
+    return
+
 #Programa principal
 while True:
     #Muestra menú
@@ -72,7 +81,7 @@ while True:
     if opcion == "1":
         (x_data, y_data) = tomar_puntos()
     elif opcion == "2":
-        #Función para muestra de diagrama
+        mostrar_diagrama(x_data, y_data)
     elif opcion == "3": #Cierra programa
         sys.exit(0)
     else:
